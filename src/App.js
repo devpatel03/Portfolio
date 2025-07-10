@@ -69,7 +69,12 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 font-inter text-gray-800 pt-24 m-0 p-0">
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-gray-900 to-gray-800 shadow-lg py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-xl">
-        <div className="text-2xl font-bold text-blue-400">Dev</div>
+        <button
+        onClick={() => handleNavigationClick('home')}
+        className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors duration-300"
+        >
+          Dev
+        </button>
         <div className="hidden md:flex space-x-8">
           <NavItem icon={<HomeIcon className="w-5 h-5" />} label="Home" id="home" active={activeSection === 'home'} onClick={scrollToSection} />
           <NavItem icon={<Code className="w-5 h-5" />} label="Skills" id="skills" active={activeSection === 'skills'} onClick={scrollToSection} />

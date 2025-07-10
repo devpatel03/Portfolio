@@ -26,12 +26,13 @@ const Home = ({ scrollToSection }) => {
                     which quickly evolved into a drive to build them myself. I love solving complex
                     problems and continuously learning new technologies to enhance my skills.
                 </p>
-                <button 
-                onClick={() => scrollToSection('projects')}
+                <a
+                href="/Resumé.pdf"
+                download
                 className="bg-blue-400 text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-500 transition-all duration-300 transform hover:scale-105 animate-pop-in"
                 >
-                    View My Work
-                </button>
+                    Download Resumé
+                </a>
             </div>
          </section>
   );
