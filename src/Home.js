@@ -3,7 +3,7 @@ import profileImage from './assets/profile-image.jpg';
 
 const Home = ({ scrollToSection }) => {
     return (
-         <section id="home" className="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden pt-16 px-4">
+         <section id="home" className="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
             <div className="absolute inset-0 z-0 opacity-10">
                 {/* Animate background circles */}
                 <div className="absolute w-48 h-48 bg-gray-700 rounded-full animate-pulse-slow top-1/4 left-1/4"></div>
